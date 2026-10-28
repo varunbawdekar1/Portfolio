@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script>try{if(sessionStorage.getItem("vb-loaded")==="1")document.documentElement.classList.add("seen")}catch(e){}try{if(localStorage.getItem("vb-motion")==="off")document.documentElement.classList.add("still")}catch(e){}</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Varun Bawdekar | Python Developer &amp; AI Engineer</title>
+  <meta name="description" content="Portfolio of Varun Bawdekar, a Python developer and AI engineer in Pune building backends, AI-driven products and web apps.">
+  <meta name="theme-color" content="#08060c">
+  <meta name="color-scheme" content="dark">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Varun Bawdekar | Python Developer &amp; AI Engineer">
+  <meta property="og:description" content="Python developer and AI engineer in Pune building backends, AI-driven products and web apps.">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2308060c'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='700' font-size='30' text-anchor='middle' fill='%238b5cf6'%3EVB%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Loading screen: shown once per visit, skipped with reduced motion -->
+  <div class="loader" id="loader" role="status" aria-label="Loading">
+    <div class="loader-marquee" aria-hidden="true">
+      <div class="lm-track">
+        <span>PYTHON DEVELOPER</span><i></i><span>AI ENGINEER</span><i></i>
+        <span>PYTHON DEVELOPER</span><i></i><span>AI ENGINEER</span><i></i>
+        <span>PYTHON DEVELOPER</span><i></i><span>AI ENGINEER</span><i></i>
+        <span>PYTHON DEVELOPER</span><i></i><span>AI ENGINEER</span><i></i>
+      </div>
+    </div>
+    <div class="loader-pill"><span>LOADING</span><b class="lp-pct">0%</b></div>
+    <p class="loader-welcome" aria-hidden="true">WELCOME</p>
+  </div>
+
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <div class="bar container">
+      <a class="brand" href="#top" aria-label="Varun Bawdekar, back to top">VB</a>
+      <a class="header-mail" href="mailto:varunbawdekar.vb@gmail.com">varunbawdekar.vb@gmail.com</a>
+      <nav class="nav" aria-label="Main">
+        <button class="motion-toggle" type="button" aria-pressed="false" aria-label="Pause animations" title="Pause animations">
+          <svg class="mt-pause" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M8 5v14M16 5v14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+          <svg class="mt-play" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>
+        </button>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+          <span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#journey">Journey</a></li>
+          <li><a href="#certifications">Certs</a></li>
+          <li><a href="#stack">Stack</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <canvas class="hero-canvas" aria-hidden="true"></canvas>
+      <div class="blob blob-a" aria-hidden="true"></div>
+      <div class="blob blob-b" aria-hidden="true"></div>
+      <div class="blob blob-c" aria-hidden="true"></div>
+
+      <div class="hero-left hero-in" style="--d:.2s">
+        <p class="eyebrow">Hello! I'm</p>
+        <h1 class="hero-name">Varun<br>Bawdekar</h1>
+      </div>
+
+      <div class="term-wrap hero-in" style="--d:.05s" role="img" aria-label="An AI chat terminal: someone asks about Varun Bawdekar, the assistant reads his résumé and answers with his role, projects and certifications">
+        <div class="term" data-tilt>
+          <div class="term-bar" aria-hidden="true">
+            <span class="td r"></span><span class="td y"></span><span class="td g"></span>
+            <span class="term-tab on" data-file="0">about</span>
+            <span class="term-tab" data-file="1">work</span>
+            <span class="term-tab" data-file="2">fit</span>
+            <span class="term-tab" data-file="3">outreach</span>
+          </div>
+          <div class="term-log" aria-hidden="true"></div>
+          <div class="term-prompt" aria-hidden="true"><span class="pg">&gt;</span><span class="pt"></span><span class="term-caret"></span></div>
+        </div>
+      </div>
+
+      <div class="hero-right hero-in" style="--d:.4s">
+        <p class="eyebrow">An</p>
+        <p class="sr-only">Python Developer and AI Engineer</p>
+        <div class="role-track role-a" aria-hidden="true">
+          <div class="rt">
+            <div class="grp"><span>AI Engineer</span><i></i><span>Python Developer</span><i></i></div>
+            <div class="grp"><span>AI Engineer</span><i></i><span>Python Developer</span><i></i></div>
+          </div>
+        </div>
+        <div class="role-track role-b" aria-hidden="true">
+          <div class="rt">
+            <div class="grp"><span>Python Developer</span><i></i><span>AI Engineer</span><i></i></div>
+            <div class="grp"><span>Python Developer</span><i></i><span>AI Engineer</span><i></i></div>
+          </div>
+        </div>
+      </div>
+
+      <ul class="rail" aria-label="Social links">
+        <li><a href="https://www.linkedin.com/in/varun-bawdekar" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11.5H3V9.75Zm6.5 0h3.83v1.57h.06c.53-1 1.84-2.07 3.78-2.07 4.04 0 4.78 2.66 4.78 6.12v5.88h-4v-5.2c0-1.24-.02-2.84-1.73-2.84-1.73 0-2 1.35-2 2.75v5.29h-4V9.75Z"/></svg></a></li>
+        <li><a href="https://wa.me/919511675008?text=Hi%20Varun%2C%20I%20saw%20your%20portfolio." target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.42h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.23-.16-.48-.29Z"/></svg></a></li>
+        <li><a href="mailto:varunbawdekar.vb@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></svg>
+        </a></li>
+      </ul>
+
+      <a class="resume-link" href="assets/Varun_Bawdekar_Resume.pdf" download>
+        <span>Resume</span>
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/></svg>
+      </a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section container" id="about">
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="sr-only">About me</h2>
+          <p class="section-tag reveal" aria-hidden="true"><span>01</span> About me</p>
+          <p class="about-lead reveal">An engineer with a strong interest in software development and a passion for learning new technologies.</p>
+          <p class="statement reveal">I bring a <em>positive attitude</em>, adaptability and a willingness to learn. I enjoy solving problems, welcome constructive feedback, and work well in collaborative environments.</p>
+          <p class="about-sub reveal">I am looking for opportunities where I can contribute, learn from experienced professionals, and grow as a software developer.</p>
+        </div>
+
+        <aside class="about-card-wrap reveal" aria-label="Varun's developer badge">
+          <div class="badge-swing">
+            <div class="lanyard" aria-hidden="true"></div>
+            <div class="badge-clip" aria-hidden="true"></div>
+            <div class="badge-card" data-badge>
+              <div class="badge-slot" aria-hidden="true"></div>
+              <p class="badge-status"><i aria-hidden="true"></i> Open to work</p>
+              <div class="badge-id">
+                <div class="badge-avatar" aria-hidden="true">VB</div>
+                <div>
+                  <h3>Varun Bawdekar</h3>
+                  <p>Python Developer &amp; AI Engineer</p>
+                </div>
+              </div>
+              <div class="badge-perf" aria-hidden="true"></div>
+              <dl class="badge-rows">
+                <div><dt>Based in</dt><dd>Pune, India &middot; <span class="badge-time" data-pune-time>--:--</span> IST</dd></div>
+                <div><dt>Currently</dt><dd>Jr Python Developer, OneStaff.ai</dd></div>
+                <div><dt>Learning</dt><dd>AI coding agents and agentic workflows</dd></div>
+                <div><dt>Open to</dt><dd>Software engineer and AI engineering roles</dd></div>
+              </dl>
+              <ul class="tags badge-tags" aria-label="Core stack"><li>Python</li><li>FastAPI</li><li>React</li><li>PostgreSQL</li></ul>
+              <div class="badge-barcode" data-barcode="VARUN BAWDEKAR" aria-hidden="true"></div>
+              <p class="badge-foot" aria-hidden="true">VARUN BAWDEKAR &middot; PUNE</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- WORK: cards stack on small screens; on desktop the section pins and the cards slide sideways as you scroll -->
+    <section class="work-section" id="work">
+      <div class="work-pin">
+        <div class="container work-head">
+          <p class="section-tag"><span>02</span> Selected work</p>
+          <h2 class="section-title">My Work</h2>
+        </div>
+
+        <div class="work-track">
+          <!-- To use a real screenshot, replace the <div class="mock"> in a card with <img src="assets/your-shot.png" alt="..."> -->
+          <article class="work-card">
+            <div class="work-info">
+              <div class="work-title">
+                <span class="work-num">01</span>
+                <div><h3>Wealthoak.ai</h3><p class="work-kicker">Fintech · Algo trading platform</p></div>
+              </div>
+              <p class="work-desc">I built three of the platform's panels: the admin panel used by the operations team, the client app panel, and the referral-partner panel where partners follow their clients and withdraw commission. The platform runs multi-account algorithmic trading for Indian F&amp;O markets. I also wrote the Python API behind the Plans &amp; Tiers editor.</p>
+              <h4 class="tools-label">Tools and features</h4>
+              <ul class="tags" aria-label="Technologies"><li>React</li><li>TypeScript</li><li>Vite</li><li>Python</li><li>FastAPI</li><li>REST APIs</li><li>Admin panel</li><li>Partner panel</li></ul>
+            </div>
+            <div class="work-image" aria-hidden="true"><svg class="shot" viewBox="0 0 640 400" xmlns="http://www.w3.org/2000/svg" style="--c1:#a855f7;--c2:#e879f9" aria-hidden="true">
+<defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:var(--c1);stop-opacity:.5"/><stop offset="1" style="stop-color:var(--c1);stop-opacity:0"/></linearGradient></defs>
+<rect class="win" x=".5" y=".5" width="639" height="399" rx="14"/>
+<path class="top" d="M.5 14A13.5 13.5 0 0 1 14 .5H626A13.5 13.5 0 0 1 639.5 14V34H.5Z"/>
+<circle class="dot" cx="18" cy="17" r="4"/><circle class="dot" cx="32" cy="17" r="4"/><circle class="dot" cx="46" cy="17" r="4"/>
+<rect class="ln" x="228" y="9" width="184" height="16" rx="8"/><rect class="side" x=".5" y="34" width="132" height="365.5"/>
+<circle class="acc" cx="26" cy="60" r="9"/><rect class="ln2" x="42" y="55" width="62" height="10" rx="5"/>
+<rect class="nav on" x="12" y="90" width="108" height="20" rx="7"/>
+<rect class="nav" x="12" y="122" width="108" height="20" rx="7"/><rect class="nav" x="12" y="154" width="108" height="20" rx="7"/>
+<rect class="nav" x="12" y="186" width="108" height="20" rx="7"/><rect class="nav" x="12" y="218" width="108" height="20" rx="7"/>
+<rect class="nav" x="12" y="250" width="108" height="20" rx="7"/>
+<text class="t" x="150" y="62">Portfolio overview</text><text class="t2" x="150" y="77">Accounts, performance and allocation</text>
+<rect class="card" x="150" y="90" width="110" height="52" rx="10"/><rect class="ln" x="160" y="100" width="42" height="5" rx="2.5"/><rect class="ln2" x="160" y="114" width="64" height="11" rx="5"/><rect class="acc" x="160" y="132" width="30" height="4" rx="2"/><rect class="card" x="270" y="90" width="110" height="52" rx="10"/><rect class="ln" x="280" y="100" width="42" height="5" rx="2.5"/><rect class="ln2" x="280" y="114" width="64" height="11" rx="5"/><rect class="acc" x="280" y="132" width="30" height="4" rx="2"/><rect class="card" x="390" y="90" width="110" height="52" rx="10"/><rect class="ln" x="400" y="100" width="42" height="5" rx="2.5"/><rect class="ln2" x="400" y="114" width="64" height="11" rx="5"/><rect class="acc" x="400" y="132" width="30" height="4" rx="2"/><rect class="card" x="510" y="90" width="110" height="52" rx="10"/><rect class="ln" x="520" y="100" width="42" height="5" rx="2.5"/><rect class="ln2" x="520" y="114" width="64" height="11" rx="5"/><rect class="acc" x="520" y="132" width="30" height="4" rx="2"/>
+<rect class="card" x="150" y="152" width="300" height="148" rx="12"/>
+<path d="M165 200H435M165 228H435M165 256H435M165 284H435" stroke="rgba(255,255,255,.07)"/>
+<path d="M165 278C195 270 205 248 235 252S285 222 315 226S365 186 395 190S430 164 438 160V288H165Z" fill="url(#g1)"/>
+<path class="line" d="M165 278C195 270 205 248 235 252S285 222 315 226S365 186 395 190S430 164 438 160"/>
+<circle class="acc" cx="438" cy="160" r="5"/><rect class="ln2" x="163" y="164" width="70" height="8" rx="4"/>
+<rect class="card" x="460" y="152" width="160" height="148" rx="12"/>
+<circle cx="540" cy="208" r="34" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="14"/>
+<circle cx="540" cy="208" r="34" fill="none" stroke="var(--c1)" stroke-width="14" stroke-dasharray="86 214" transform="rotate(-90 540 208)"/>
+<circle cx="540" cy="208" r="34" fill="none" stroke="var(--c2)" stroke-width="14" stroke-dasharray="52 214" stroke-dashoffset="-88" transform="rotate(-90 540 208)"/>
+<circle cx="540" cy="208" r="34" fill="none" stroke="#6d28d9" stroke-width="14" stroke-dasharray="36 214" stroke-dashoffset="-142" transform="rotate(-90 540 208)"/>
+<circle class="acc" cx="478" cy="268" r="4"/><rect class="ln" x="488" y="265" width="40" height="6" rx="3"/><circle class="acc2" cx="478" cy="284" r="4"/><rect class="ln" x="488" y="281" width="52" height="6" rx="3"/>
+<rect class="card" x="150" y="310" width="470" height="76" rx="12"/><circle class="acc2" cx="168" cy="324" r="5"/><rect class="ln2" x="182" y="320" width="96" height="8" rx="4"/><rect class="ln" x="330" y="320" width="64" height="8" rx="4"/><rect class="pill" x="440" y="318" width="46" height="12" rx="6"/><rect class="ln2" x="540" y="320" width="62" height="8" rx="4"/><circle class="acc2" cx="168" cy="347" r="5"/><rect class="ln2" x="182" y="343" width="96" height="8" rx="4"/><rect class="ln" x="330" y="343" width="64" height="8" rx="4"/><rect class="pill" x="440" y="341" width="46" height="12" rx="6"/><rect class="ln2" x="540" y="343" width="62" height="8" rx="4"/><circle class="acc2" cx="168" cy="370" r="5"/><rect class="ln2" x="182" y="366" width="96" height="8" rx="4"/><rect class="ln" x="330" y="366" width="64" height="8" rx="4"/><rect class="pill" x="440" y="364" width="46" height="12" rx="6"/><rect class="ln2" x="540" y="366" width="62" height="8" rx="4"/>
+<text class="t3" x="628" y="392" text-anchor="end">Illustration</text>
+</svg></div>
+          </article>
+
+          <article class="work-card">
+            <div class="work-info">
+              <div class="work-title">
+                <span class="work-num">02</span>
+                <div><h3>OneHR</h3><p class="work-kicker">AI · HR technology</p></div>
+              </div>
+              <p class="work-desc">An HR platform with an AI-driven recruitment module. I handled the integration work: bringing many parallel feature branches together into release lines, resolving conflicts, keeping the API contract, database migrations and CI passing, and building part of the employee self-service panel.</p>
+              <h4 class="tools-label">Tools and features</h4>
+              <ul class="tags" aria-label="Technologies"><li>Integration</li><li>Python</li><li>FastAPI</li><li>Alembic</li><li>Git</li><li>CI</li></ul>
+            </div>
+            <div class="work-image" aria-hidden="true"><svg class="shot" viewBox="0 0 640 400" xmlns="http://www.w3.org/2000/svg" style="--c1:#e879f9;--c2:#8b5cf6" aria-hidden="true">
+<rect class="win" x=".5" y=".5" width="639" height="399" rx="14"/>
+<path class="top" d="M.5 14A13.5 13.5 0 0 1 14 .5H626A13.5 13.5 0 0 1 639.5 14V34H.5Z"/>
+<circle class="dot" cx="18" cy="17" r="4"/><circle class="dot" cx="32" cy="17" r="4"/><circle class="dot" cx="46" cy="17" r="4"/>
+<rect class="ln" x="228" y="9" width="184" height="16" rx="8"/><rect class="side" x=".5" y="34" width="132" height="365.5"/>
+<circle class="acc" cx="26" cy="60" r="9"/><rect class="ln2" x="42" y="55" width="62" height="10" rx="5"/>
+<rect class="nav on" x="12" y="90" width="108" height="20" rx="7"/>
+<rect class="nav" x="12" y="122" width="108" height="20" rx="7"/><rect class="nav" x="12" y="154" width="108" height="20" rx="7"/>
+<rect class="nav" x="12" y="186" width="108" height="20" rx="7"/><rect class="nav" x="12" y="218" width="108" height="20" rx="7"/>
+<rect class="nav" x="12" y="250" width="108" height="20" rx="7"/>
+<text class="t" x="150" y="62">Recruitment pipeline</text><text class="t2" x="150" y="77">Candidates by stage, with AI screening scores</text>
+<rect class="pill" x="496" y="52" width="58" height="18" rx="9"/><rect class="acc" x="562" y="52" width="58" height="18" rx="9"/>
+<rect class="card" x="150" y="92" width="112" height="290" rx="12"/><text class="t2b" x="160" y="110">Applied</text><rect class="pill" x="232" y="101" width="20" height="12" rx="6"/><rect class="cand" x="158" y="122" width="96" height="76" rx="9"/><circle class="acc2" cx="174" cy="142" r="10"/><rect class="ln2" x="190" y="135" width="46" height="6" rx="3"/><rect class="ln" x="190" y="146" width="32" height="5" rx="2.5"/><circle cx="232" cy="178" r="9" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="3.5"/><circle cx="232" cy="178" r="9" fill="none" stroke="var(--c1)" stroke-width="3.5" stroke-dasharray="18 60" stroke-linecap="round" transform="rotate(-90 232 178)"/><rect class="pill" x="166" y="172" width="30" height="11" rx="5.5"/><rect class="ln" x="166" y="158" width="60" height="5" rx="2.5"/><rect class="cand" x="158" y="208" width="96" height="76" rx="9"/><circle class="acc2" cx="174" cy="228" r="10"/><rect class="ln2" x="190" y="221" width="46" height="6" rx="3"/><rect class="ln" x="190" y="232" width="32" height="5" rx="2.5"/><circle cx="232" cy="264" r="9" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="3.5"/><circle cx="232" cy="264" r="9" fill="none" stroke="var(--c1)" stroke-width="3.5" stroke-dasharray="18 60" stroke-linecap="round" transform="rotate(-90 232 264)"/><rect class="pill" x="166" y="258" width="30" height="11" rx="5.5"/><rect class="ln" x="166" y="244" width="60" height="5" rx="2.5"/><rect class="cand" x="158" y="294" width="96" height="76" rx="9"/><circle class="acc2" cx="174" cy="314" r="10"/><rect class="ln2" x="190" y="307" width="46" height="6" rx="3"/><rect class="ln" x="190" y="318" width="32" height="5" rx="2.5"/><circle cx="232" cy="350" r="9" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="3.5"/><circle cx="232" cy="350" r="9" fill="none" stroke="var(--c1)" stroke-width="3.5" stroke-dasharray="18 60" stroke-linecap="round" transform="rotate(-90 232 350)"/><rect class="pill" x="166" y="344" width="30" height="11" rx="5.5"/><rect class="ln" x="166" y="330" width="60" height="5" rx="2.5"/><rect class="card" x="269" y="92" width="112" height="290" rx="12"/><text class="t2b" x="279" y="110">Screening</text><rect class="pill" x="351" y="101" width="20" height="12" rx="6"/><rect class="cand" x="277" y="122" width="96" height="76" rx="9"/><circle class="acc2" cx="293" cy="142" r="10"/><rect class="ln2" x="309" y="135" width="46" height="6" rx="3"/><rect class="ln" x="309" y="146" width="32" height="5" rx="2.5"/><circle cx="351" cy="178" r="9" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="3.5"/><circle cx="351" cy="178" r="9" fill="none" stroke="var(--c1)" stroke-width="3.5" stroke-dasharray="33 60" stroke-linecap="round" transform="rotate(-90 351 178)"/><rect class="pill" x="285" y="172" width="30" height="11" rx="5.5"/><rect class="ln" x="285" y="158" width="60" height="5" rx="2.5"/><rect class="cand" x="277" y="208" width="96" height="76" rx="9"/><circle class="acc2" cx="293" cy="228" r="10"/><rect class="ln2" x="309" y="221" width="46" height="6" rx="3"/><rect class="ln" x="309" y="232" width="32" height="5" rx="2.5"/><circle cx="351" cy="264" r="9" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="3.5"/><circle cx="351" cy="264" r="9" fill="none" stroke="var(--c1)" stroke-width="3.5" stroke-dasharray="33 60" stroke-linecap="round" transform="rotate(-90 351 264)"/><rect class="pill" x="285" y="258" width="30" height="11" rx="5.5"/><rect class="ln" x="285" y="244" width="60" height="5" rx="2.5"/><rect class="cand" x="277" y="294" width="96" height="76" rx="9"/><circle class="acc2" cx="293" cy="314" r="10"/><rect class="ln2" x="309" y="307" width="46" height="6" rx="3"/><rect class="ln" x="309" y="318" width="32" height="5" rx="2.5"/><circle cx="351" cy="350" r="9" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="3.5"/><circle cx="351" cy="350" r="9" fill="none" stroke="var(--c1)" stroke-width="3.5" stroke-dasharray="33 60" stroke-linecap="round" transform="rotate(-90 351 350)"/><rect class="pill" x="285" y="344" width="30" height="11" rx="5.5"/><rect class="ln" x="285" y="330" width="60" height="5" rx="2.5"/><rect class="card" x="388" y="92" width="112" height="290" rx="12"/><text class="t2b" x="398" y="110">Interview</text><rect class="pill" x="470" y="101" width="20" height="12" rx="6"/><rect class="cand" x="396" y="122" width="96" height="76" rx="9"/><circle class="acc2" cx="412" cy="142" r="10"/><rect class="ln2" x="428" y="135" width="46" height="6" rx="3"/><rect class="ln" x="428" y="146" width="32" height="5" rx="2.5"/><circle cx="470" cy="178" r="9" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="3.5"/><circle cx="470" cy="178" r="9" fill="none" stroke="var(--c1)" stroke-width="3.5" stroke-dasharray="23 60" stroke-linecap="round" transform="rotate(-90 470 178)"/><rect class="pill" x="404" y="172" width="30" height="11" rx="5.5"/><rect class="ln" x="404" y="158" width="60" height="5" rx="2.5"/><rect class="cand" x="396" y="208" width="96" height="76" rx="9"/><circle class="acc2" cx="412" cy="228" r="10"/><rect class="ln2" x="428" y="221" width="46" height="6" rx="3"/><rect class="ln" x="428" y="232" width="32" height="5" rx="2.5"/><circle cx="470" cy="264" r="9" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="3.5"/><circle cx="470" cy="264" r="9" fill="none" stroke="var(--c1)" stroke-width="3.5" stroke-dasharray="23 60" stroke-linecap="round" transform="rotate(-90 470 264)"/><rect class="pill" x="404" y="258" width="30" height="11" rx="5.5"/><rect class="ln" x="404" y="244" width="60" height="5" rx="2.5"/><rect class="card" x="507" y="92" width="112" height="290" rx="12"/><text class="t2b" x="517" y="110">Offer</text><rect class="pill" x="589" y="101" width="20" height="12" rx="6"/><rect class="cand" x="515" y="122" width="96" height="76" rx="9"/><circle class="acc2" cx="531" cy="142" r="10"/><rect class="ln2" x="547" y="135" width="46" height="6" rx="3"/><rect class="ln" x="547" y="146" width="32" height="5" rx="2.5"/><circle cx="589" cy="178" r="9" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="3.5"/><circle cx="589" cy="178" r="9" fill="none" stroke="var(--c1)" stroke-width="3.5" stroke-dasharray="38 60" stroke-linecap="round" transform="rotate(-90 589 178)"/><rect class="pill" x="523" y="172" width="30" height="11" rx="5.5"/><rect class="ln" x="523" y="158" width="60" height="5" rx="2.5"/>
+<text class="t3" x="628" y="392" text-anchor="end">Illustration</text>
+</svg></div>
+          </article>
+
+          <article class="work-card">
+            <div class="work-info">
+              <div class="work-title">
+                <span class="work-num">03</span>
+                <div><h3>OneReach</h3><p class="work-kicker">AI · Sales engagement platform</p></div>
+              </div>
+              <p class="work-desc">A sales engagement and lead-prospecting platform in the style of Apollo.io, which I built end to end. Search and import leads, research companies, draft outreach with AI, run multi-step email campaigns and sequences with sending limits and warm-up, and handle replies in one inbox, with analytics on deliverability and send times.</p>
+              <h4 class="tools-label">Tools and features</h4>
+              <ul class="tags" aria-label="Technologies"><li>React</li><li>Vite</li><li>Python</li><li>Lead research</li><li>Email sequences</li><li>Analytics</li><li>ScrapeGraphAI</li></ul>
+            </div>
+            <div class="work-image" aria-hidden="true"><svg class="shot" viewBox="0 0 640 400" xmlns="http://www.w3.org/2000/svg" style="--c1:#818cf8;--c2:#a855f7" aria-hidden="true">
+<rect class="win" x=".5" y=".5" width="639" height="399" rx="14"/>
+<path class="top" d="M.5 14A13.5 13.5 0 0 1 14 .5H626A13.5 13.5 0 0 1 639.5 14V34H.5Z"/>
+<circle class="dot" cx="18" cy="17" r="4"/><circle class="dot" cx="32" cy="17" r="4"/><circle class="dot" cx="46" cy="17" r="4"/>
+<rect class="ln" x="228" y="9" width="184" height="16" rx="8"/><rect class="side" x=".5" y="34" width="132" height="365.5"/>
+<circle class="acc" cx="26" cy="60" r="9"/><rect class="ln2" x="42" y="55" width="62" height="10" rx="5"/>
+<rect class="nav on" x="12" y="90" width="108" height="20" rx="7"/>
+<rect class="nav" x="12" y="122" width="108" height="20" rx="7"/><rect class="nav" x="12" y="154" width="108" height="20" rx="7"/>
+<rect class="nav" x="12" y="186" width="108" height="20" rx="7"/><rect class="nav" x="12" y="218" width="108" height="20" rx="7"/>
+<rect class="nav" x="12" y="250" width="108" height="20" rx="7"/>
+<text class="t" x="150" y="62">Sequences</text><text class="t2" x="150" y="77">Multi-step campaigns, send times and replies</text>
+<rect class="acc" x="560" y="52" width="60" height="18" rx="9"/>
+<rect class="card" x="150" y="90" width="300" height="148" rx="12"/><circle class="acc" cx="164" cy="118" r="4"/><rect class="ln2" x="176" y="114" width="70" height="8" rx="4"/><rect class="step" x="296" y="113" width="18" height="10" rx="3"/><rect class="step" x="318" y="113" width="18" height="10" rx="3"/><rect class="step on" x="340" y="113" width="18" height="10" rx="3"/><rect class="ln" x="380" y="114" width="46" height="8" rx="4"/><circle class="acc" cx="164" cy="143" r="4"/><rect class="ln2" x="176" y="139" width="87" height="8" rx="4"/><rect class="step" x="296" y="138" width="18" height="10" rx="3"/><rect class="step" x="318" y="138" width="18" height="10" rx="3"/><rect class="step on" x="340" y="138" width="18" height="10" rx="3"/><rect class="ln" x="380" y="139" width="46" height="8" rx="4"/><circle class="acc" cx="164" cy="168" r="4"/><rect class="ln2" x="176" y="164" width="104" height="8" rx="4"/><rect class="step" x="296" y="163" width="18" height="10" rx="3"/><rect class="step" x="318" y="163" width="18" height="10" rx="3"/><rect class="step on" x="340" y="163" width="18" height="10" rx="3"/><rect class="ln" x="380" y="164" width="46" height="8" rx="4"/><circle class="acc" cx="164" cy="193" r="4"/><rect class="ln2" x="176" y="189" width="81" height="8" rx="4"/><rect class="step" x="296" y="188" width="18" height="10" rx="3"/><rect class="step" x="318" y="188" width="18" height="10" rx="3"/><rect class="step on" x="340" y="188" width="18" height="10" rx="3"/><rect class="ln" x="380" y="189" width="46" height="8" rx="4"/><circle class="acc" cx="164" cy="218" r="4"/><rect class="ln2" x="176" y="214" width="98" height="8" rx="4"/><rect class="step" x="296" y="213" width="18" height="10" rx="3"/><rect class="step" x="318" y="213" width="18" height="10" rx="3"/><rect class="step on" x="340" y="213" width="18" height="10" rx="3"/><rect class="ln" x="380" y="214" width="46" height="8" rx="4"/>
+<rect class="card" x="456" y="90" width="164" height="148" rx="12"/><rect class="ln2" x="468" y="100" width="64" height="7" rx="3.5"/><rect x="468" y="122" width="17" height="17" rx="4" fill="var(--c1)" opacity="0.12"/><rect x="489" y="122" width="17" height="17" rx="4" fill="var(--c1)" opacity="0.42"/><rect x="510" y="122" width="17" height="17" rx="4" fill="var(--c1)" opacity="0.72"/><rect x="531" y="122" width="17" height="17" rx="4" fill="var(--c1)" opacity="0.22"/><rect x="552" y="122" width="17" height="17" rx="4" fill="var(--c1)" opacity="0.52"/><rect x="573" y="122" width="17" height="17" rx="4" fill="var(--c1)" opacity="0.82"/><rect x="594" y="122" width="17" height="17" rx="4" fill="var(--c1)" opacity="0.32"/><rect x="468" y="143" width="17" height="17" rx="4" fill="var(--c1)" opacity="0.82"/><rect x="489" y="143" width="17" height="17" rx="4" fill="var(--c1)" opacity="0.42"/><rect x="510" y="143" width="17" height="17" rx="4" fill="var(--c1)" opacity="0.82"/><rect x="531" y="143" width="17" height="17" rx="4" fill="var(--c1)" opacity="0.42"/><rect x="552" y="143" width="17" height="17" rx="4" fill="var(--c1)" opacity="0.82"/><rect x="573" y="143" width="17" height="17" rx="4" fill="var(--c1)" opacity="0.42"/><rect x="594" y="143" width="17" height="17" rx="4" fill="var(--c1)" opacity="0.82"/><rect x="468" y="164" width="17" height="17" rx="4" fill="var(--c1)" opacity="0.72"/><rect x="489" y="164" width="17" height="17" rx="4" fill="var(--c1)" opacity="0.42"/><rect x="510" y="164" width="17" height="17" rx="4" fill="var(--c1)" opacity="0.12"/><rect x="531" y="164" width="17" height="17" rx="4" fill="var(--c1)" opacity="0.62"/><rect x="552" y="164" width="17" height="17" rx="4" fill="var(--c1)" opacity="0.32"/><rect x="573" y="164" width="17" height="17" rx="4" fill="var(--c1)" opacity="0.82"/><rect x="594" y="164" width="17" height="17" rx="4" fill="var(--c1)" opacity="0.52"/><rect x="468" y="185" width="17" height="17" rx="4" fill="var(--c1)" opacity="0.62"/><rect x="489" y="185" width="17" height="17" rx="4" fill="var(--c1)" opacity="0.42"/><rect x="510" y="185" width="17" height="17" rx="4" fill="var(--c1)" opacity="0.22"/><rect x="531" y="185" width="17" height="17" rx="4" fill="var(--c1)" opacity="0.82"/><rect x="552" y="185" width="17" height="17" rx="4" fill="var(--c1)" opacity="0.62"/><rect x="573" y="185" width="17" height="17" rx="4" fill="var(--c1)" opacity="0.42"/><rect x="594" y="185" width="17" height="17" rx="4" fill="var(--c1)" opacity="0.22"/><rect x="468" y="206" width="17" height="17" rx="4" fill="var(--c1)" opacity="0.52"/><rect x="489" y="206" width="17" height="17" rx="4" fill="var(--c1)" opacity="0.42"/><rect x="510" y="206" width="17" height="17" rx="4" fill="var(--c1)" opacity="0.32"/><rect x="531" y="206" width="17" height="17" rx="4" fill="var(--c1)" opacity="0.22"/><rect x="552" y="206" width="17" height="17" rx="4" fill="var(--c1)" opacity="0.12"/><rect x="573" y="206" width="17" height="17" rx="4" fill="var(--c1)" opacity="0.82"/><rect x="594" y="206" width="17" height="17" rx="4" fill="var(--c1)" opacity="0.72"/>
+<rect class="card" x="150" y="248" width="300" height="138" rx="12"/><rect class="ln2" x="162" y="258" width="46" height="7" rx="3.5"/><circle class="acc2" cx="166" cy="284" r="9"/><rect class="ln2" x="184" y="276" width="70" height="7" rx="3.5"/><rect class="ln" x="184" y="287" width="150" height="6" rx="3"/><circle class="acc" cx="428" cy="284" r="4"/><circle class="acc2" cx="166" cy="315" r="9"/><rect class="ln2" x="184" y="307" width="70" height="7" rx="3.5"/><rect class="ln" x="184" y="318" width="168" height="6" rx="3"/><circle class="acc" cx="428" cy="315" r="4"/><circle class="acc2" cx="166" cy="346" r="9"/><rect class="ln2" x="184" y="338" width="70" height="7" rx="3.5"/><rect class="ln" x="184" y="349" width="186" height="6" rx="3"/><circle class="acc" cx="428" cy="346" r="4"/>
+<rect class="card" x="456" y="248" width="164" height="138" rx="12"/><rect class="ln2" x="468" y="258" width="58" height="7" rx="3.5"/><rect class="acc" x="476" y="354" width="11" height="18" rx="3" opacity="0.45"/><rect class="acc" x="493" y="325" width="11" height="47" rx="3" opacity="0.52"/><rect class="acc" x="510" y="348" width="11" height="24" rx="3" opacity="0.59"/><rect class="acc" x="527" y="319" width="11" height="53" rx="3" opacity="0.66"/><rect class="acc" x="544" y="342" width="11" height="30" rx="3" opacity="0.73"/><rect class="acc" x="561" y="313" width="11" height="59" rx="3" opacity="0.8"/><rect class="acc" x="578" y="336" width="11" height="36" rx="3" opacity="0.87"/><rect class="acc" x="595" y="307" width="11" height="65" rx="3" opacity="0.94"/>
+<text class="t3" x="628" y="392" text-anchor="end">Illustration</text>
+</svg></div>
+          </article>
+
+          <article class="work-card">
+            <div class="work-info">
+              <div class="work-title">
+                <span class="work-num">04</span>
+                <div><h3>E-Commerce Site</h3><p class="work-kicker">Web application</p></div>
+              </div>
+              <p class="work-desc">A web application where users browse products, read detailed descriptions and simulate adding items to a cart. An admin panel supports adding and managing products. Cart sessions are handled on the backend, without payment processing.</p>
+              <h4 class="tools-label">Tools and features</h4>
+              <ul class="tags" aria-label="Technologies"><li>Web app</li><li>Admin panel</li><li>Backend sessions</li></ul>
+            </div>
+            <div class="work-image" aria-hidden="true"><svg class="shot" viewBox="0 0 640 400" xmlns="http://www.w3.org/2000/svg" style="--c1:#c084fc;--c2:#7c3aed" aria-hidden="true">
+<rect class="win" x=".5" y=".5" width="639" height="399" rx="14"/>
+<path class="top" d="M.5 14A13.5 13.5 0 0 1 14 .5H626A13.5 13.5 0 0 1 639.5 14V34H.5Z"/>
+<circle class="dot" cx="18" cy="17" r="4"/><circle class="dot" cx="32" cy="17" r="4"/><circle class="dot" cx="46" cy="17" r="4"/>
+<rect class="ln" x="228" y="9" width="184" height="16" rx="8"/>
+<circle class="acc" cx="30" cy="54" r="9"/><rect class="ln2" x="46" y="49" width="54" height="10" rx="5"/>
+<rect class="ln" x="170" y="44" width="260" height="20" rx="10"/><rect class="ln" x="528" y="46" width="22" height="16" rx="4"/><circle class="acc2" cx="556" cy="46" r="8"/>
+<rect class="nav on" x="580" y="47" width="40" height="14" rx="7"/>
+<rect class="card" x="28" y="78" width="188" height="144" rx="12"/><rect class="prod" x="36" y="86" width="172" height="78" rx="8"/><circle cx="122" cy="124" r="26" fill="var(--c2)" opacity=".9"/><rect class="ln2" x="38" y="176" width="84" height="8" rx="4"/><rect class="ln" x="38" y="192" width="44" height="7" rx="3.5"/><rect class="acc" x="164" y="186" width="42" height="20" rx="10"/><rect class="card" x="230" y="78" width="188" height="144" rx="12"/><rect class="prod" x="238" y="86" width="172" height="78" rx="8"/><rect x="324" y="124" width="52" height="52" rx="12" fill="var(--c2)" opacity=".9" transform="translate(-26 -26)"/><rect class="ln2" x="240" y="176" width="95" height="8" rx="4"/><rect class="ln" x="240" y="192" width="44" height="7" rx="3.5"/><rect class="acc" x="366" y="186" width="42" height="20" rx="10"/><rect class="card" x="432" y="78" width="188" height="144" rx="12"/><rect class="prod" x="440" y="86" width="172" height="78" rx="8"/><path d="M526 96L556 148L496 148Z" fill="var(--c2)" opacity=".9"/><rect class="ln2" x="442" y="176" width="106" height="8" rx="4"/><rect class="ln" x="442" y="192" width="44" height="7" rx="3.5"/><rect class="acc" x="568" y="186" width="42" height="20" rx="10"/><rect class="card" x="28" y="234" width="188" height="144" rx="12"/><rect class="prod" x="36" y="242" width="172" height="78" rx="8"/><circle cx="122" cy="280" r="26" fill="var(--c2)" opacity=".9"/><rect class="ln2" x="38" y="332" width="117" height="8" rx="4"/><rect class="ln" x="38" y="348" width="44" height="7" rx="3.5"/><rect class="acc" x="164" y="342" width="42" height="20" rx="10"/><rect class="card" x="230" y="234" width="188" height="144" rx="12"/><rect class="prod" x="238" y="242" width="172" height="78" rx="8"/><rect x="324" y="280" width="52" height="52" rx="12" fill="var(--c2)" opacity=".9" transform="translate(-26 -26)"/><rect class="ln2" x="240" y="332" width="88" height="8" rx="4"/><rect class="ln" x="240" y="348" width="44" height="7" rx="3.5"/><rect class="acc" x="366" y="342" width="42" height="20" rx="10"/><rect class="card" x="432" y="234" width="188" height="144" rx="12"/><rect class="prod" x="440" y="242" width="172" height="78" rx="8"/><path d="M526 252L556 304L496 304Z" fill="var(--c2)" opacity=".9"/><rect class="ln2" x="442" y="332" width="99" height="8" rx="4"/><rect class="ln" x="442" y="348" width="44" height="7" rx="3.5"/><rect class="acc" x="568" y="342" width="42" height="20" rx="10"/>
+<text class="t3" x="628" y="392" text-anchor="end">Illustration</text>
+</svg></div>
+          </article>
+
+          <article class="work-card">
+            <div class="work-info">
+              <div class="work-title">
+                <span class="work-num">05</span>
+                <div><h3>User Authentication System</h3><p class="work-kicker">Backend service</p></div>
+              </div>
+              <p class="work-desc">A backend authentication service for modern web applications that need secure user management. It supports traditional login and role-based access control for permission management.</p>
+              <h4 class="tools-label">Tools and features</h4>
+              <ul class="tags" aria-label="Technologies"><li>Authentication</li><li>Role-based access</li><li>Backend</li></ul>
+            </div>
+            <div class="work-image" aria-hidden="true"><svg class="shot" viewBox="0 0 640 400" xmlns="http://www.w3.org/2000/svg" style="--c1:#f0abfc;--c2:#7e22ce" aria-hidden="true">
+<rect class="win" x=".5" y=".5" width="639" height="399" rx="14"/>
+<path class="top" d="M.5 14A13.5 13.5 0 0 1 14 .5H626A13.5 13.5 0 0 1 639.5 14V34H.5Z"/>
+<circle class="dot" cx="18" cy="17" r="4"/><circle class="dot" cx="32" cy="17" r="4"/><circle class="dot" cx="46" cy="17" r="4"/>
+<rect class="ln" x="228" y="9" width="184" height="16" rx="8"/>
+<rect class="card" x="36" y="62" width="268" height="310" rx="14"/>
+<circle class="acc" cx="170" cy="104" r="16"/><text class="t" x="170" y="144" text-anchor="middle">Welcome back</text><text class="t2" x="170" y="159" text-anchor="middle">Sign in to your account</text>
+<rect class="field" x="62" y="180" width="216" height="32" rx="8"/><rect class="ln" x="74" y="192" width="86" height="8" rx="4"/>
+<rect class="field" x="62" y="222" width="216" height="32" rx="8"/><circle class="ln2" cx="76" cy="238" r="2.5"/><circle class="ln2" cx="86" cy="238" r="2.5"/><circle class="ln2" cx="96" cy="238" r="2.5"/><circle class="ln2" cx="106" cy="238" r="2.5"/><circle class="ln2" cx="116" cy="238" r="2.5"/>
+<rect class="acc" x="62" y="270" width="216" height="34" rx="9"/><rect class="ln2" x="140" y="284" width="60" height="7" rx="3.5" style="fill:#fff;opacity:.9"/>
+<rect class="ln" x="62" y="322" width="70" height="6" rx="3"/><rect class="ln" x="196" y="322" width="82" height="6" rx="3"/>
+<rect class="card" x="332" y="62" width="288" height="310" rx="14"/>
+<text class="t" x="348" y="96">Roles and permissions</text><text class="t2" x="348" y="111">Role-based access control</text>
+<text class="t3b" x="478" y="142">Read</text><text class="t3b" x="527" y="142">Write</text><text class="t3b" x="574" y="142">Delete</text>
+<text class="t2b" x="362" y="172">Admin</text><rect class="tog on" x="470" y="161" width="32" height="16" rx="8"/><circle cx="488" cy="169" r="6" fill="#fff"/><rect class="tog on" x="520" y="161" width="32" height="16" rx="8"/><circle cx="538" cy="169" r="6" fill="#fff"/><rect class="tog on" x="570" y="161" width="32" height="16" rx="8"/><circle cx="588" cy="169" r="6" fill="#fff"/><text class="t2b" x="362" y="228">Editor</text><rect class="tog on" x="470" y="217" width="32" height="16" rx="8"/><circle cx="488" cy="225" r="6" fill="#fff"/><rect class="tog on" x="520" y="217" width="32" height="16" rx="8"/><circle cx="538" cy="225" r="6" fill="#fff"/><rect class="tog" x="570" y="217" width="32" height="16" rx="8"/><circle cx="578" cy="225" r="6" fill="#fff"/><text class="t2b" x="362" y="284">Viewer</text><rect class="tog on" x="470" y="273" width="32" height="16" rx="8"/><circle cx="488" cy="281" r="6" fill="#fff"/><rect class="tog" x="520" y="273" width="32" height="16" rx="8"/><circle cx="528" cy="281" r="6" fill="#fff"/><rect class="tog" x="570" y="273" width="32" height="16" rx="8"/><circle cx="578" cy="281" r="6" fill="#fff"/>
+<rect class="ln" x="348" y="330" width="120" height="7" rx="3.5"/><rect class="pill" x="348" y="344" width="64" height="14" rx="7"/><rect class="pill" x="418" y="344" width="64" height="14" rx="7"/>
+<text class="t3" x="628" y="392" text-anchor="end">Illustration</text>
+</svg></div>
+          </article>
+
+          <div class="work-card work-cta">
+            <p class="more-q">Want to see more?</p>
+            <p class="more-sub">Interested in working together? Let's talk.</p>
+            <a class="cta" href="#contact"><span>Get in touch</span><b aria-hidden="true">→</b></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOURNEY -->
+    <section class="section container" id="journey">
+      <div class="section-head reveal">
+        <p class="section-tag"><span>03</span> Journey</p>
+        <h2 class="section-title">My career &amp; experience</h2>
+      </div>
+      <ol class="timeline">
+        <li class="tl-item reveal">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <div class="tl-card">
+            <p class="when">Aug 2026 – Present</p>
+            <h3>Jr Python Developer <span class="at">OneStaff.ai</span></h3>
+            <p>Python and full-stack developer on three products: the OneReach sales engagement platform, the Wealthoak.ai trading platform and the OneHR recruitment platform.</p>
+            <ul class="bullets">
+              <li><strong>OneReach:</strong> took the product from mock data to a working system. Wired the dashboard, leads, inbox and analytics pages to real backend endpoints, and built the campaign and sequence backend, a company model with duplicate detection, a real CSV lead import, and the sign-in system (Argon2id password hashing, sessions, account lockout and password reset). Added an audit-log viewer, retention, erasure and export controls, and a job-queue admin screen.</li>
+              <li><strong>Wealthoak.ai:</strong> built the client app, admin and partner panels. In the app: connecting a broker (Angel One, Zerodha, Fyers, Sharekhan) through its own login page, account changes confirmed with one-time codes, pause and vacation controls, and asset factsheets with equity curve, drawdown and market-crisis history. In the admin: the Plans &amp; Tiers editor with draft and atomic publish, backed by a Python API and a public read-only plans endpoint, plus Sharekhan onboarding and keeping broker tokens out of access logs. The partner panel is a whole app: a partner application form (PAN and GSTIN), commission overview, a wallet statement, and paying subscription invoices from the commission wallet.</li>
+              <li><strong>OneHR:</strong> handled integration. Brought parallel feature branches (AI résumé scoring, job syndication, recruiter mail, requisition approvals) together into release lines, resolved merge conflicts, regenerated the API contract, fixed CI failures after merges, and straightened out the database migration chain after merging eleven branches. Also built part of the employee self-service panel.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="tl-item reveal">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <div class="tl-card">
+            <p class="when">Aug 2024 – Aug 2026</p>
+            <h3>Graduate Engineer <span class="at">RailTel Corporation of India Ltd.</span></h3>
+            <p>Worked on RailWire, the broadband and VPN service of RailTel, a wholly owned subsidiary of Indian Railways.</p>
+            <ul class="bullets">
+              <li>Built proactive monitoring frameworks and risk-mitigation protocols to anticipate network bottlenecks and reduce reactive escalations.</li>
+              <li>Recommended automation workflows and escalation triggers in the CRM and partner portals to cut manual work and speed up provisioning.</li>
+              <li>Helped launch and run the RailWire service portals, covering subscriber onboarding, service provisioning and complaint management.</li>
+              <li>Managed the request and incident life cycle, and audited compliance reports before portal activation.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="tl-item reveal">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <div class="tl-card">
+            <p class="when">2021 – 2023</p>
+            <h3>Master of Computer Application <span class="at">KCE Institute of Management &amp; Research, Jalgaon</span></h3>
+            <p>North Maharashtra University · CGPA 8.63/10</p>
+          </div>
+        </li>
+        <li class="tl-item reveal">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <div class="tl-card">
+            <p class="when">2018 – 2021</p>
+            <h3>Bachelor of Computer Application <span class="at">P.O. Nahata College of Commerce &amp; Science, Bhusawal</span></h3>
+            <p>North Maharashtra University · CGPA 9.75/10</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="section container" id="certifications">
+      <div class="section-head reveal">
+        <p class="section-tag"><span>04</span> Certifications</p>
+        <h2 class="section-title">Licenses &amp; certifications</h2>
+      </div>
+      <div class="cert-stats reveal">
+        <div class="cert-stat"><b data-stat="certs" data-to="7">7</b><span>certifications</span></div>
+        <div class="cert-stat"><b data-stat="issuers" data-to="5">5</b><span>issuers</span></div>
+        <div class="cert-stat"><b>2025&ndash;26</b><span>Apr 2025 to Aug 2026</span></div>
+      </div>
+      <div class="cert-filters reveal" role="group" aria-label="Filter certifications by topic">
+        <button type="button" class="cert-chip on" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" class="cert-chip" data-filter="ai" aria-pressed="false">AI</button>
+        <button type="button" class="cert-chip" data-filter="cloud" aria-pressed="false">Cloud</button>
+        <button type="button" class="cert-chip" data-filter="devops" aria-pressed="false">DevOps</button>
+      </div>
+      <div class="cert-grid">
+        <article class="cert-card reveal" data-cat="ai">
+          <span class="cert-stamp" aria-hidden="true">2026</span>
+          <div class="cert-icon cc" aria-hidden="true">CC</div>
+          <div class="cert-body">
+            <h3>Claude Code 101</h3>
+            <p class="cert-issuer">Anthropic Academy</p>
+            <p class="cert-meta">Completed Aug 2026</p>
+            <p class="cert-desc">AI coding agents and the agentic workflow: Plan Mode, context management, CLAUDE.md, subagents, MCP servers and hooks.</p>
+          </div>
+        </article>
+        <article class="cert-card reveal" data-cat="ai">
+          <span class="cert-stamp" aria-hidden="true">2025</span>
+          <div class="cert-icon ta" aria-hidden="true">iQ</div>
+          <div class="cert-body">
+            <h3>GenAI Powered Data Analytics</h3>
+            <p class="cert-issuer">Tata iQ &middot; Forage job simulation</p>
+            <p class="cert-meta">Completed Sep 2025</p>
+            <p class="cert-desc">GenAI-assisted exploratory analysis, a no-code predictive model for delinquency risk, and an AI-driven collections strategy for a financial-services team.</p>
+          </div>
+        </article>
+        <article class="cert-card reveal" data-cat="cloud devops">
+          <span class="cert-stamp" aria-hidden="true">2025</span>
+          <div class="cert-icon aws" aria-hidden="true">AWS</div>
+          <div class="cert-body">
+            <h3>Getting Started with AWS CloudFormation</h3>
+            <p class="cert-issuer">AWS Training &amp; Certification</p>
+            <p class="cert-meta">Completed Jun 18, 2025</p>
+            <p class="cert-desc">Completion certificate. Defining and managing AWS infrastructure as code with CloudFormation.</p>
+          </div>
+        </article>
+        <article class="cert-card reveal" data-cat="cloud devops">
+          <span class="cert-stamp" aria-hidden="true">2025</span>
+          <div class="cert-icon aws" aria-hidden="true">AWS</div>
+          <div class="cert-body">
+            <h3>Getting Started with DevOps on AWS</h3>
+            <p class="cert-issuer">AWS Training &amp; Certification</p>
+            <p class="cert-meta">Completed Jun 18, 2025</p>
+            <p class="cert-desc">Completion certificate. The DevOps approach and the AWS services that support it.</p>
+          </div>
+        </article>
+        <article class="cert-card reveal" data-cat="cloud">
+          <span class="cert-stamp" aria-hidden="true">2025</span>
+          <div class="cert-icon lt" aria-hidden="true">LT</div>
+          <div class="cert-body">
+            <h3>AWS Cloud Assessment</h3>
+            <p class="cert-issuer">LearnTube.ai</p>
+            <p class="cert-meta">Issued Jun 2025</p>
+            <p class="cert-desc">Certificate of completion for an assessment of Amazon Web Services skills.</p>
+            <p class="cert-id">Credential ID DJA-B-1-1330393-0</p>
+          </div>
+        </article>
+        <article class="cert-card reveal" data-cat="devops">
+          <span class="cert-stamp" aria-hidden="true">2025</span>
+          <div class="cert-icon" aria-hidden="true"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/docker/docker-original.svg" alt="" width="30" height="30" loading="lazy"></div>
+          <div class="cert-body">
+            <h3>Docker Training Course for the Absolute Beginner</h3>
+            <p class="cert-issuer">KodeKloud</p>
+            <p class="cert-meta">Completed May 28, 2025</p>
+            <p class="cert-desc">Course completion certificate. Building and running containers with Docker.</p>
+            <p class="cert-id">Credential ID 59a65f8b-dddb-42e6-8e13-2aee3cdd2fd6</p>
+          </div>
+        </article>
+        <article class="cert-card reveal" data-cat="devops">
+          <span class="cert-stamp" aria-hidden="true">2025</span>
+          <div class="cert-icon" aria-hidden="true"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/jenkins/jenkins-original.svg" alt="" width="30" height="30" loading="lazy"></div>
+          <div class="cert-body">
+            <h3>Jenkins For Beginners</h3>
+            <p class="cert-issuer">KodeKloud</p>
+            <p class="cert-meta">Completed Apr 30, 2025</p>
+            <p class="cert-desc">Course completion certificate. Automating builds and pipelines with Jenkins.</p>
+            <p class="cert-id">Credential ID 7b0d84c4-fb67-4b35-b3e4-05362e024976</p>
+          </div>
+        </article>
+      </div>
+      <p class="cert-more reveal"><a class="cta" href="https://www.linkedin.com/in/varun-bawdekar/details/certifications/" target="_blank" rel="noopener"><span>See them on LinkedIn</span><b aria-hidden="true">→</b></a></p>
+    </section>
+
+    <!-- STACK -->
+    <section class="techstack" id="stack">
+      <div class="ts-bg" aria-hidden="true"><i></i><i></i><i></i><canvas class="ts-canvas"></canvas></div>
+      <div class="container ts-content">
+        <p class="section-tag reveal"><span>05</span> Tech stack</p>
+        <h2 class="section-title reveal">Tech Stack</h2>
+        <div class="ts-pyramid reveal">
+          <div class="ts-row">
+            <a class="ts-item" href="https://www.python.org" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/python/python-original.svg" alt="" width="48" height="48" loading="lazy"><span>Python</span></a>
+            <a class="ts-item" href="https://fastapi.tiangolo.com" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/fastapi/fastapi-original.svg" alt="" width="48" height="48" loading="lazy"><span>FastAPI</span></a>
+            <a class="ts-item" href="https://www.postgresql.org" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/postgresql/postgresql-original.svg" alt="" width="48" height="48" loading="lazy"><span>PostgreSQL</span></a>
+          </div>
+          <div class="ts-row">
+            <a class="ts-item" href="https://www.typescriptlang.org" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/typescript/typescript-original.svg" alt="" width="48" height="48" loading="lazy"><span>TypeScript</span></a>
+            <a class="ts-item" href="https://developer.mozilla.org/docs/Web/JavaScript" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/javascript/javascript-original.svg" alt="" width="48" height="48" loading="lazy"><span>JavaScript</span></a>
+            <a class="ts-item" href="https://react.dev" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/react/react-original.svg" alt="" width="48" height="48" loading="lazy"><span>React</span></a>
+            <a class="ts-item" href="https://vite.dev" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/vitejs/vitejs-original.svg" alt="" width="48" height="48" loading="lazy"><span>Vite</span></a>
+            <a class="ts-item" href="https://www.php.net" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/php/php-original.svg" alt="" width="48" height="48" loading="lazy"><span>PHP</span></a>
+          </div>
+          <div class="ts-row">
+            <a class="ts-item" href="https://developer.mozilla.org/docs/Web/HTML" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/html5/html5-original.svg" alt="" width="48" height="48" loading="lazy"><span>HTML</span></a>
+            <a class="ts-item" href="https://developer.mozilla.org/docs/Web/CSS" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/css3/css3-original.svg" alt="" width="48" height="48" loading="lazy"><span>CSS</span></a>
+            <a class="ts-item" href="https://www.docker.com" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/docker/docker-original.svg" alt="" width="48" height="48" loading="lazy"><span>Docker</span></a>
+            <a class="ts-item" href="https://git-scm.com" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/git/git-original.svg" alt="" width="48" height="48" loading="lazy"><span>Git</span></a>
+            <a class="ts-item" href="https://github.com" target="_blank" rel="noopener"><img class="inv" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/github/github-original.svg" alt="" width="48" height="48" loading="lazy"><span>GitHub</span></a>
+            <a class="ts-item" href="https://www.jenkins.io" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/jenkins/jenkins-original.svg" alt="" width="48" height="48" loading="lazy"><span>Jenkins</span></a>
+            <a class="ts-item" href="https://www.selenium.dev" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/selenium/selenium-original.svg" alt="" width="48" height="48" loading="lazy"><span>Selenium</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section container contact" id="contact">
+      <p class="section-tag reveal"><span>06</span> Contact</p>
+      <h2 class="contact-title reveal">Let's build something <em>together.</em></h2>
+      <p class="contact-sub reveal">I'm open to software engineer and AI engineering roles. If my work looks like a fit, I'd love to hear from you.</p>
+      <div class="cta-row reveal">
+        <a class="cta" href="https://wa.me/919511675008?text=Hi%20Varun%2C%20I%20saw%20your%20portfolio." target="_blank" rel="noopener"><span>Message on WhatsApp</span><b aria-hidden="true">→</b></a>
+        <a class="cta" href="https://www.linkedin.com/in/varun-bawdekar" target="_blank" rel="noopener"><span>LinkedIn</span><b aria-hidden="true">→</b></a>
+        <a class="cta cta-solid" href="mailto:varunbawdekar.vb@gmail.com"><span>Hire me</span><b aria-hidden="true">→</b></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container foot-grid">
+      <div>
+        <h3>Email</h3>
+        <a href="mailto:varunbawdekar.vb@gmail.com">varunbawdekar.vb@gmail.com</a>
+      </div>
+      <div>
+        <h3>Location</h3>
+        <p>Pune, Maharashtra, India</p>
+      </div>
+      <div>
+        <h3>Connect</h3>
+        <ul>
+          <li><a href="https://wa.me/919511675008?text=Hi%20Varun%2C%20I%20saw%20your%20portfolio." target="_blank" rel="noopener">WhatsApp · +91 95116 75008</a></li>
+          <li><a href="https://www.linkedin.com/in/varun-bawdekar" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="assets/Varun_Bawdekar_Resume.pdf" download>Résumé (PDF)</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container foot-bottom">
+      <p>Designed and developed by Varun Bawdekar · <span id="year">2026</span></p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
