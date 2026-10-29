@@ -131,7 +131,8 @@
   toggle.addEventListener('click', function () {
     setMenu(toggle.getAttribute('aria-expanded') !== 'true');
   });
-  links.addEventListener('click', function (e) { if (e.target.closest('a')) setMenu(false); });
+  /* Capture phase: the menu must close (and Lenis restart) before the link's own handler calls lenis.scrollTo, which is ignored while Lenis is stopped */
+  links.addEventListener('click', function (e) { if (e.target.closest('a')) setMenu(false); }, true);
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMenu(false); });
   window.addEventListener('resize', function () { if (window.innerWidth > 820) setMenu(false); });
 
